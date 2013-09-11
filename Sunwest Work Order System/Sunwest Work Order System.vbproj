@@ -1,0 +1,490 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{331C2ABE-B587-4EBE-9B76-9253E19A8138}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sunwest_Work_Order_System.My.MyApplication</StartupObject>
+    <RootNamespace>Sunwest_Work_Order_System</RootNamespace>
+    <AssemblyName>Sunwest Work Order System</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <ApplicationIcon>Resources\RASMM.dll_I0064_0409.ico</ApplicationIcon>
+    <ManifestCertificateThumbprint>016EC3F2EA777B37E3729FD21AA20F2B20088E1E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Sunwest Work Order System_TemporaryKey.pfx</ManifestKeyFile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <PublishUrl>C:\Users\JeffN\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.0.6.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sunwest Work Order System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sunwest Work Order System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DirtyButton, Version=2.1.2798.19880, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Form Change Control Test, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\JeffN\Desktop\Form Change Control Test\Form Change Control Test\bin\Debug\Form Change Control Test.exe</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutACC.Designer.vb">
+      <DependentUpon>AboutACC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutACC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\QuickBookIntegrate.Designer.vb">
+      <DependentUpon>QuickBookIntegrate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\QuickBookIntegrate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WOTemplate\frmCopyTemplate.Designer.vb">
+      <DependentUpon>frmCopyTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WOTemplate\frmCopyTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmRemoveImages.Designer.vb">
+      <DependentUpon>frmRemoveImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmRemoveImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmAddImages.Designer.vb">
+      <DependentUpon>frmAddImages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmAddImages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmDefaults.Designer.vb">
+      <DependentUpon>frmDefaults.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmDefaults.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmEditYears.Designer.vb">
+      <DependentUpon>frmEditYears.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmEditYears.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmEmployee.Designer.vb">
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRPTviewer.Designer.vb">
+      <DependentUpon>frmRPTviewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRPTviewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer\frmSearchCustomer.Designer.vb">
+      <DependentUpon>frmSearchCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\frmSearchCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WOTemplate\frmSearchOrAddTemplate.Designer.vb">
+      <DependentUpon>frmSearchOrAddTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WOTemplate\frmSearchOrAddTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmSearchWorkOrder.Designer.vb">
+      <DependentUpon>frmSearchWorkOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmSearchWorkOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee\frmShowEmployees.Designer.vb">
+      <DependentUpon>frmShowEmployees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\frmShowEmployees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmSimTest.Designer.vb">
+      <DependentUpon>frmSimTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmSimTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmWO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work Order\frmWO.Designer.vb">
+      <DependentUpon>frmWO.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global_Defs.vb" />
+    <Compile Include="zImageResizer\BrowseForFolder.vb" />
+    <Compile Include="zImageResizer\ConfigOpt.vb" />
+    <Compile Include="zImageResizer\frmImageResizer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Work Order\frmPrintBatch.Designer.vb">
+      <DependentUpon>frmPrintBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Work Order\frmPrintBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rptWorkOrder.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptWorkOrder.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutACC.resx">
+      <DependentUpon>AboutACC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\QuickBookIntegrate.resx">
+      <DependentUpon>QuickBookIntegrate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WOTemplate\frmCopyTemplate.resx">
+      <DependentUpon>frmCopyTemplate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmRemoveImages.resx">
+      <DependentUpon>frmRemoveImages.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmAddImages.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddImages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmCustomer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmDefaults.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDefaults.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmEditYears.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditYears.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRPTviewer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRPTviewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\frmSearchCustomer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearchCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WOTemplate\frmSearchOrAddTemplate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearchOrAddTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmSearchWorkOrder.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSearchWorkOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee\frmShowEmployees.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowEmployees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmSimTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSimTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmWO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmWO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="zImageResizer\frmImageResizer.resx">
+      <DependentUpon>frmImageResizer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work Order\frmPrintBatch.resx">
+      <DependentUpon>frmPrintBatch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rptWorkOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptWorkOrder.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLUI.exe_I0001_0409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wpcao.dll_I0079_0409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SunwestLogo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SunwestLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenLight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="Resources\YellowLight.png" />
+    <None Include="Sunwest Work Order System_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WorkOrder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RASMM.dll_I0064_0409.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wpcao.dll_I0079_0409.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageres.dll_I005a_0409.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageres.dll_I00b1_0409.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageres.dll_I0014_0409.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageres.dll_I0014_0409.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.CrystalReports.Engine">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Enterprise.InfoStore">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Shared">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.Windows.Forms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunwestlogo-new.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
